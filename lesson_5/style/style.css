@@ -176,46 +176,40 @@ a{
   }
 .about{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
-
+    margin-bottom: 119px;
 }
 .about__tabs{
     display: flex;
+    flex: 1;
     justify-content: space-around;
-    flex-flow: wrap;
     width: 51%;
+    max-width: 436px;
     text-align: left;
 }
 .tab__left{
     background: url(../img/style/block-left.jpg)no-repeat;
     width: 140px;
-    height: 15vw;
-    min-height: 115px;
+   height: 224px;
     padding: 14px 0 0 15px;
-    margin-left: 10px;
-    
 }
 .tab__center{
     background: url(../img/style/block-centr.jpg)no-repeat;
     width: 140px;
-    height: 15vw;
-    min-height: 115px;
+    height: 224px;
     padding: 14px 0 0 15px;
-    margin-left: 10px;
-    
 }
 .tab__right{
     background: url(../img/style/block-right.jpg)no-repeat;
     width: 140px;
-    max-height: 15vw;
-    min-height: 115px;
+    height: 224px;
     padding: 14px 0 0 15px;
-    margin-left: 10px;
-    
-    
 }
 .about__text{
+    flex: 1;
     width: 44%;
+    min-width: 350px;
     text-align: left;
     font-weight: 400;
     letter-spacing: 0.1875px;
@@ -238,7 +232,37 @@ a{
     letter-spacing: 0.1875px;
     color: white;
 }
-@media (max-width: 800px){
+.services__head{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services__thumbnail{
+    flex: 1;
+    min-width: 154px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #48555B;
+    text-align: left;
+}
+.services__thumbnail::after{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #00A4E5;
+    right: 0;
+    margin: 10px 0;
+    display: block;
+}
+.services__description{
+    flex: 2;
+    min-width: 361px;
+}
+.services__button{
+    flex: 1;
+    min-width: 108px;
+}
+
+@media (max-width: 1160px){
     .hamburger-menu{
         position: absolute;
     }
@@ -335,10 +359,13 @@ a{
       transition-duration: .25s;
     }
     .about{
-        align-items: flex-start;
+        /* display: flex;
+        flex-wrap:wra ; */
     }
+    .main__wrapper{
+        padding: 0 0;
     }
-/* @media (max-width: 760px){ */
+/* @media (max-width: 760px){
     .about{
         align-items: flex-start;
     }
@@ -351,7 +378,7 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
-}
+} */
         
 }
 }
