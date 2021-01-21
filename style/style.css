@@ -129,6 +129,7 @@ a{
     justify-content: space-between;
     align-items: center;
     width: 30%;
+    min-width: 262px
 }
 .main__logo{
     margin:0;
@@ -178,6 +179,7 @@ a{
 .about{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 119px;
 }
@@ -186,7 +188,7 @@ a{
     flex: 1;
     justify-content: space-around;
     width: 51%;
-    max-width: 436px;
+    max-width: 450px;
     text-align: left;
 }
 .tab__left{
@@ -211,6 +213,7 @@ a{
     flex: 1;
     width: 44%;
     min-width: 350px;
+    max-width: 405px;
     text-align: left;
     font-weight: 400;
     letter-spacing: 0.1875px;
@@ -225,7 +228,9 @@ a{
 
 }
 .tabs__thumbnail{
-    font-weight: 800;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 29px;
     font-size: 24px;
     letter-spacing: 0.1875px;
     color: white;
@@ -267,7 +272,7 @@ a{
 }
 .services__tab{
     flex: 1;
-    width: 295px;
+    max-width: 295px;
     height: 330px;
     padding: 38px 22px 39px 23px;
     border: 1px solid #E6E6E6;
@@ -353,11 +358,18 @@ input[type="submit"]{
 }
 .footer__head{
     display: flex;
-    justify-content: space-around;
-    text-align: left;
+    flex-direction: column;
     background-color:  #141A20;
     padding:42px 276px 0 249px;
     min-width: 379px;
+}
+.footer__title{
+    display: flex;
+
+}
+.footer__links{
+    display: flex;
+    justify-content: space-between;
 }
 .Footer__list{
     display: flex;
@@ -480,7 +492,7 @@ input[type="submit"]{
     width: 12px;
 }
 .footer__bottom{
-    width: 100%;
+    
     min-width: 379px;
     height: 60px;
     padding: 22px 0 23px 0;
@@ -606,7 +618,9 @@ letter-spacing: 0.846154px;
       transition-duration: .25s;
     }
     .main__wrapper{
-        padding: 0 5px; 
+        width: 100%;
+        /* padding: 0 5px;  */
+        margin: 0 auto;
     }
     .about__tabs{
         margin: 0 auto;
